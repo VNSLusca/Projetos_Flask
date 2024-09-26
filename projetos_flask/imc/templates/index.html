@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/estilo_imc.css">
+    <title>IMC</title>
+</head>
+<body>
+    <main>
+        <h1>CALCULE SEU IMC</h1>
+
+        <div class="conteudo">
+            <form action="/IMC" method="post">
+                
+                <p class="subtitulo">SEU IMC É</p>
+
+                <div class="calculo"> 
+                <label for="">Altura(M)</label>
+                <input type="type" id="altura" name="altura" value="{{altura}}" required>
+
+                <label for="">Peso(Kg)</label>
+                <input type="text" id="peso" name="peso" value="{{peso}}"required><br><br>
+        </div>
+            
+        <div class="resultado">
+            {% if imc %}
+                <h2 class="imc">{{ imc }}</h2>
+                <h3 class="status"> {{ status }}</h3>
+            {% endif %}
+        </div>
+        
+        <div>
+            <button type="submit" class="botao">Calcular</button>
+        </div>
+
+        </form>
+    </main>    
+</body>
+</html>

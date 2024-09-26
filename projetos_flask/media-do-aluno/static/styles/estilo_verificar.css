@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+.root{
+    --fonte-1: 'Belleza', sans-serif;
+    --fonte-2: 'League Spartan', sans-serif; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #ffffef; 
+    overflow: hidden;
+}
+
+.menu{
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    height: 625px;
+    width: 100px;
+    border-radius: 40px;
+    background-color: #a00f0f;
+}
+
+.menu_logo{
+    margin: 29px 0px 0px 27.5px;
+
+}
+
+.user_logo{
+    position: absolute;
+    top: 150px;
+    right: 22.5px;
+}
+
+.lapis_logo{
+    position: absolute;
+    top: 225px;
+    right: 24px;
+}
+
+img :hover{
+    background-color: #898946;
+}
+
+.consulta_notas{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    margin-top: 30px;
+    font-family: 'Belleza' sans-serif;
+}
+
+.consulta_notas h2{
+    font-family: var(--fonte-2);
+    font-size: 50px;
+    margin: 50px 0px 20px 0;
+}
+
+.consulta_notas table{
+    border: 3px solid black;
+}
+
+.consulta_notas th{
+    padding: 10px 25px;
+    color: azure;
+    background-color: #a00f0f
+}
+
+.consulta_notas td{
+    padding: 10px 25px;
+    background-color: rgb(235, 205, 205);
+    font-weight: 700;
+}
+
+.barra{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1600px;
+    height: 65px;
+    background-color: #a00f0f;
+}
+
+.email{
+    margin: 12.5px 0px 0px 17.5px;
+}
+
+p{
+    position: absolute;
+    left: 70px;
+    bottom: 20px;
+    font-family: 'Belleza', sans-serif;
+    font-size: 20px;
+    color: #ffffef;
+}

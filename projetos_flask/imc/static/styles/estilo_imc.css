@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+
+.root{
+    --fonte-um: 'Oswald', sans-serif;
+    --fonte-dois: 'Glacial Indifference', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background-color: #ccf4f9;
+}
+
+main{
+    height: 575px;
+    width: 825px;
+    background-color: #00bf63;
+    margin: 60px 0px 0px 350px;
+    border: #078548 30px solid;
+}
+
+div{
+    display: inline;
+}
+
+h1{
+    height: 65px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: aliceblue;
+    margin: 25px 50px 10px 45px;
+}
+
+.calculo{
+    margin: 75px 0px 0px 50px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.calculo label{
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 30px;
+    font-weight: 200;
+    margin-left: 27.5px;
+    margin-bottom: 2px;
+}
+
+.calculo input{
+    font-size: 20px;
+    height: 37.5px;
+    width: 215px;
+    padding-left: 5px;
+    margin-left: 27.5px;
+    margin-bottom: 20px;
+    border: 1.5px black solid;
+}
+
+.calculo input :hover{
+    background-color: rgb(165, 170, 174);
+}
+
+.subtitulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 47.5px;
+    font-weight: 400;
+    color: aliceblue;
+    position: absolute;
+    top: 210px;
+    right: 465px;
+}
+
+.botao{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    background-color: #5271ff;
+    color: rgb(0, 0, 0);
+    width: 165px;
+    height: 55px;
+    border: #5271ff 4.5px;
+    border-radius: 30px;
+    margin: 35px 0px 0px 105px;
+}
+
+.botao:hover{
+    background-color: #3851c3;
+    color: rgb(44, 43, 43);
+}
+
+.resultado{
+    position:absolute;
+    top: 300px;
+    right: 390px;
+    background-color: #c1ff72;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.imc{
+    font-family: 'Oswald' sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 35px 0px 0px 55px; 
+}
+
+.status{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    width: 200px;
+    margin: 7.5px 0px 0px 57.5px;
+
+}
+

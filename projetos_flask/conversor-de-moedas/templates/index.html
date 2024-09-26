@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/estilo.css">
+    <title>Conversor Monetário</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/assets/moeda.png" alt="">
+        </div>
+
+        <div class="cabecalho_titulo">
+            <h2>Converta suas moedas com facilidade e agilidade!</h2>
+        </div>
+
+        <div class="cabecalho_imagens">
+            <img src="/static/assets/moeda.png" alt="">
+            <img src="/static/assets/moeda.png" alt="">
+            <img src="/static/assets/moeda.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <h1>Conversor de Moedas</h1>
+
+        <div class="conversor">
+            <div class="conversor_brasil">
+                <form action="" method="post">
+                    <label for="">Quantia</label>
+                    <input type="number" name="real" value="{{ moeda_real}}">
+                    <img src="/static/assets/brasil.png" height="25px" width="25px" alt="">
+                    <span>BRL</span>
+            </div>
+
+            <div class="conversor_eua">
+                <label for="">Converter para</label>
+                <input type="number" name="dolar" value="{{ moeda_dolar }}">
+                <img src="/static/assets/eua.png" height="25px" width="25px" alt="">
+                <span>USD</span>
+            </div> 
+            
+            <div class="conversor_cotacao">
+                <br>
+                <label for="">Cotação do Dólar</label>
+                <input type="number" name="cotacao" value="{{cotacao}}" >
+            </div>
+
+                <button class="botao" type="submit">Converter Dinheiro</button>
+            </form>
+        </div>
+
+        <div class="resultado">
+
+        </div>
+    </main>
+
+</body>
+</html>

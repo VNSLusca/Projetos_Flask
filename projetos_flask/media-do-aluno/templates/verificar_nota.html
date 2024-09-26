@@ -1,0 +1,49 @@
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Notas</title>
+    <link rel="stylesheet" href="/static/styles/estilo_verificar.css">
+</head>
+<body>
+    <div class="menu">
+        <img class="menu_logo" src="/static/assets/Gridmenu_branco.png" alt="" height="55px" width="55px">
+
+    <a href="/"><img class="lapis_logo" src="/static/assets/Editlapis.png" alt="" height="45px" width="45px"></a>
+
+    <a href="/consulta"><img class="user_logo" src="/static/assets/User checkuser.png" alt="" height="45px" width="45px" ></a>
+    </div>
+</div>
+    <main>
+        <div class="consulta_notas">
+            <h2 class="titulo">Média do Aluno</h2>
+            <table>
+                <tr>
+                    <th>Nome do aluno</th>
+                    <th>Primeira nota</th>
+                    <th>Segunda nota</th>
+                    <th>Terceira nota</th>
+                    <th>Média</th>
+                    <th>Status</th>
+                </tr>
+                {% for pro in prod %}
+                <tr>
+                    <td>{{pro.nome}}</td>
+                    <td>{{pro.nota_1}}</td>
+                    <td>{{pro.nota_2}}</td>
+                    <td>{{pro.nota_3}}</td>
+                    <td>{{pro.media}}</td>
+                    <td>{{pro.status}}</td>
+                </tr>
+                {% endfor %}    
+            </table>
+        </div>
+
+        <div class="barra">       
+            <img class="email" src="/static/assets/Mail.png" alt="" height="40px" width="40px">
+
+            <p>Lucasvinicius06silva@gmail.com</p>
+        </div>
+</main>
+</body>
+</html>

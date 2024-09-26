@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média do Aluno</title>
+    <link rel="stylesheet" href="/static/styles/estilo_notas.css">
+</head>
+<body>
+    <div class="menu">
+        <img class="menu_logo" src="/static/assets/Gridmenu_branco.png" alt="" height="55px" width="55px">
+
+        <a href="/"><img class="lapis_logo" src="/static/assets/Editlapis.png" alt="" height="45px" width="45px"></a>
+
+        <a href="/consulta"><img class="user_logo" src="/static/assets/User checkuser.png" alt="" height="45px" width="45px" ></a>
+    </div>
+
+    <main>
+    <div class="lançamento_notas">
+        <form action="/validar_notas" method="post" class="informações">
+
+            <h1 class="titulo">LANÇAMENTO DE NOTAS</h1>
+
+            <label for="">Nome do aluno:</label>
+            <input type="text" name="nome_aluno" id="nome_aluno">
+
+            <label for="">Nota 1:</label>
+            <input type="number" name="nota_1" id="nota_1"> 
+
+            <label for="">Nota 2:</label>
+            <input type="number" name="nota_2" id="nota_2">
+
+            <label for="">Nota 3:</label>
+            <input type="number" name="nota_3" id="nota_3">
+
+            <div>
+                <button type="submit" class="notas_enviar"> <h4>Enviar</h4> </button>
+            </div>
+
+            <div class="barra">       
+                <img class="email" src="/static/assets/Mail.png" alt="" height="40px" width="40px">
+
+                <p>Lucasvinicius06silva@gmail.com</p>
+            </div>
+        </main>
+        </form>
+    </div>
+</body>
+</html>
